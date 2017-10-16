@@ -1,6 +1,8 @@
 #Q1: The Most Wanted Letter
+#Level : Elementary
 #URL : https://py.checkio.org/mission/most-wanted-letter/
 
+#正規表現を使えるようにする
 import re
 
 def count_alphabet(text):
@@ -36,6 +38,7 @@ print(count_alphabet(text))
 
 
 #Q2 : Non-unique Elements
+#Level : Elementary
 #URL : https://py.checkio.org/mission/non-unique-elements/
 
 def unique_elements(original_list):
@@ -65,6 +68,7 @@ print(unique_elements(original_list))
 
 
 #Q3 : House Password
+#Level : Elementary
 #URL : https://py.checkio.org/mission/house-password/
 
 def check_password(password):
@@ -105,3 +109,39 @@ def check_password(password):
 
 password = "QwErTy911poqqqq"
 print(check_password(password))
+
+#Q4 : Monkey Typing
+#Level : Elementary
+#URL : https://py.checkio.org/mission/monkey-typing/
+
+def count_words(word,word_list):
+
+    #word_listから要素がユニークに含まれるlistを作成
+    unique_list = []
+
+    for element in word_list:
+        if element not in unique_list:
+            unique_list.append(element)
+
+    #wordを全て小文字のintに変換する
+    small_word = word.lower()
+
+    #それぞれの要素がwordに含まれているかどうかをチェック
+    count_result = 0
+
+    for element in unique_list:
+        if element in small_word:
+            count_result = count_result + 1
+
+    return count_result
+
+word = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+word_list = ["sum", "hamlet", "infinity", "anything"]
+print(count_words(word,word_list))
+
+
+#Q8 : Long Repeat
+#Level : Elementary
+#URL : https://py.checkio.org/mission/long-repeat/
+
+#writing
