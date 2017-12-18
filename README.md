@@ -4,7 +4,7 @@ I think Checkio is the best answer to this question.
 Checkio is a website for Python and JavaScript’s learners that provides a lot of practical use and interesting questions. 
 https://checkio.org/
 
-The UI of Checkio’s website is like Games’ UX.
+The UI of Checkio’s website is like Games’ UI.
 You need to solve more questions so that you can expand your territories.
 The more you solve, the  more questions  become difficult.
 Unlike other textbooks, questions in Checkio are more practical use.
